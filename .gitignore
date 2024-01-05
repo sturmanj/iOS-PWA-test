@@ -1,0 +1,4 @@
+node_modules
+.env
+APIkeys.json
+testRes.json
