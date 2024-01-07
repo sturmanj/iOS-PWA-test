@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <title>WebPush Test</title>
+    <base href="https://4d8b-67-170-182-179.ngrok-free.app/">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/images/favicon.png"> <!-- needed for phone PWA app icon -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>WebPush Test</h1>
+
+        <div id="add-to-home-screen">
+            For WebPush work you may need to add this website to Home Screen at your iPhone or iPad (window.navigator is not standalone).
+            <image src="images/webpush-add-to-home-screen.jpg" />
+        </div>
+
+        <button id="subscribe_btn" onclick="subscribeToPush()">Subscribe to notifications</button>
+
+        <div id="active_sub"></div>
+        <button id="test_send_btn" onclick="testSend()">Send test push</button>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+
+</html>

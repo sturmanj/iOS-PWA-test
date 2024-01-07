@@ -1,4 +1,6 @@
-node_modules
-.env
-APIkeys.json
-testRes.json
+.idea
+.DS_Store
+vapid_private.pem
+vapid_private.txt
+vapid_public.txt
+/backend/node_modules
